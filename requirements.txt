@@ -1,0 +1,23 @@
+# LangChain core
+langchain>=0.2,<0.3
+langchain-community>=0.2,<0.3
+langgraph>=0.1,<0.2
+langchain-openai>=0.1,<0.2
+
+# Data structures
+pydantic>=2,<3
+tiktoken
+python-dotenv
+
+# Document loaders
+unstructured[pdf]
+pypdf
+
+# Vector search
+faiss-cpu
+
+# UI
+streamlit
+
+# Utils
+requests
