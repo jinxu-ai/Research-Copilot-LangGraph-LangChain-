@@ -1,2 +1,69 @@
-﻿.venv/
+﻿# === venv & env ===
+.venv/
+env/
+venv/
 .env
+.env.*        # e.g. .env.local
+
+# === Python caches & build ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.dylib
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# === Notebooks & checkpoints ===
+.ipynb_checkpoints/
+
+# === Logs & runtime ===
+*.log
+*.pid
+*.seed
+.DS_Store
+Thumbs.db
+
+# === Tooling caches ===
+.mypy_cache/
+.pytype/
+.pytest_cache/
+.tox/
+.coverage
+coverage.xml
+htmlcov/
+.ruff_cache/
+.cache/
+
+# === Editors/IDEs ===
+.vscode/*
+
+# 可保留工程级设置
+!.vscode/settings.json     
+!.vscode/extensions.json
+.idea/
+*.code-workspace
+
+# === Data & artifacts (keep .gitkeep only) ===
+data/
+!data/.gitkeep
+notes/
+!notes/.gitkeep
+tmp/
+artifacts/
+
+# === Streamlit ===
+# 绝不要提交
+.streamlit/secrets.toml    
+
+.streamlit/*.json
+
+# === OS / misc ===
+*.swp
+*.swx
+*.orig
