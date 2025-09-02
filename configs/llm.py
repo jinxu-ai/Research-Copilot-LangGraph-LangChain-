@@ -8,6 +8,26 @@ load LLMs
 '''
 
 def create_llm_client(provider="deepseek"):
+    """
+    Create and return a Large Language Model (LLM) client based on the given provider.
+
+    This function supports two providers:
+    - "openai": Uses LangChain's ChatOpenAI client (with GPT-4o-mini).
+    - "deepseek": Uses the official OpenAI SDK with DeepSeek's API base URL.
+
+    Args:
+        provider (str, optional): The LLM provider to use. 
+            Options are:
+            - "openai" (default: "deepseek")
+            - "deepseek"
+
+    Returns:
+        object: An initialized LLM client instance (ChatOpenAI or OpenAI).
+
+    Raises:
+        ValueError: If the given provider is not supported.
+    """
+    
     # create openai client
     if provider == "openai":
         return ChatOpenAI(
