@@ -1,7 +1,7 @@
 # Research Copilot (LangGraph × LangChain) 工作计划
 
 ## 总体目标
-在 7–10 天内完成一个“Research Copilot”，用 **LangGraph 编排**实现 Agentic System（规划→工具→反思→记忆→迭代），并在每个节点使用 **LangChain 原语**（Loaders、Splitters、Summarize、LCEL、Parsers、Retrievers、Callbacks、Streaming），展示二者的完整技术栈。
+用 **LangGraph 编排**实现 Agentic System（规划→工具→反思→记忆→迭代），并在每个节点使用 **LangChain 原语**（Loaders、Splitters、Summarize、LCEL、Parsers、Retrievers、Callbacks、Streaming），展示二者的完整技术栈。
 
 ---
 
@@ -145,13 +145,13 @@
 ---
 
 # 快速验收 Checklist
-- [ ] LangGraph 循环：`decide→search`  
-- [ ] 四工具：`web_search/read_pdf/python_exec/write_markdown`  
-- [ ] Map-Reduce 摘要  
-- [ ] ≥3 条 LCEL 链：plan/queries/synthesize  
-- [ ] Pydantic 结构化输出（Notes）  
-- [ ] Streaming/Callbacks  
-- [ ] 向量检索与压缩  
-- [ ] 评测报告（baseline vs iterate vs retriever）  
-- [ ] UI + Markdown 导出  
-- [ ] 安全执行（python_exec 白名单）
+- LangGraph 循环：`decide→search`  
+- 四工具：`web_search/read_pdf/python_exec/write_markdown`  
+- Map-Reduce 摘要  
+- ≥3 条 LCEL 链：plan/queries/synthesize  
+- Pydantic 结构化输出（Notes）  
+- Streaming/Callbacks  
+- 向量检索与压缩  
+- 评测报告（baseline vs iterate vs retriever）  
+- UI + Markdown 导出  
+- 安全执行（python_exec 白名单）
